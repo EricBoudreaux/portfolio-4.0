@@ -11,8 +11,20 @@ function App() {
 
   const [display, setDisplay] = useState('hero');
 
+  const [navBrand, setNavBrand] = useState(true)
+
   const changeDisplay = (display) => {
     setDisplay(display);
+
+    if(display === 'hero'){
+      setNavBrand(false)
+    } else {
+      setNavBrand(true)
+    }
+
+    if(display === 'about'){
+
+    }
   }
 
 
@@ -20,14 +32,14 @@ function App() {
 
   return (
     <div className="p-2 h-screen md:max-w-[1060px] mx-auto">
-      <Navbar changeDisplay={changeDisplay}/>
+      <Navbar changeDisplay={changeDisplay} navBrand={navBrand}/>
       {/* <Hero />  */}
 
       {/* <About /> */}
       {/* <Work />   */}
 
       {/* <Contact />  */}
-      {display === 'hero' ? <Hero /> : null}
+      {display === 'hero' ? <Hero className=''  /> : null}
       {display === 'about' ? <About /> : null}
       {display === 'work' ? <Work /> : null}
       {display === 'contact' ? <Contact /> : null}

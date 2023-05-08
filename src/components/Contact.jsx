@@ -14,7 +14,7 @@ const Contact = () => {
             <textarea rows='5' placeholder="A message" className='bg-white py-2 ps-6 rounded-[5px] w-full'
                 />
 
-            <button className='w-[20%] bg-white rounded-[5px] py-2 hover:bg-black hover:text-white duration-300 ease-in'>Send</button>
+            <button className='btn-shadow w-[20%] bg-white rounded-[5px] py-2 hover:bg-black hover:text-white duration-300 ease-in'>Send</button>
 
           </form>
     </div>

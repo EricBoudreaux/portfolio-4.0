@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { BiMenu } from 'react-icons/bi'
 
@@ -9,7 +9,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 
 
-const Navbar = ({ changeDisplay }) => {
+const Navbar = ({ changeDisplay, navBrand }) => {
 
   const [nav, setNav] = useState(false);
 
@@ -23,7 +23,8 @@ const Navbar = ({ changeDisplay }) => {
 
 
             <div className='font-light text-[20px]'>
-              <h6>Based In Portland, Oregon</h6>
+              <h6 className={navBrand ? 'opacity-0 top-[-5px] absolute ease-in duration-500 delay-1000' : 'opacity-100 absolute top-[50px] ease-in duration-500 delay-1000'}>Based In Portland, Oregon</h6>
+              <h6 className={navBrand ? 'opacity-100 top-12 absolute ease-in duration-500 delay-1000' : 'opacity-0 top-24 absolute ease-in duration-500 delay-1000'}>Eric Boudreaux</h6>
             </div>
 
             <div className='block md:hidden z-50 hover:cursor-pointer' onClick={() => setNav(!nav)}>

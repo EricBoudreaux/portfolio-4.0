@@ -1,5 +1,6 @@
 import React from 'react'
 import WorkTitle from './WorkTitle'
+import Carousel from './Carousel'
 
 import MyWeather from '../img/myweather_website.png'
 
@@ -8,7 +9,10 @@ export const Work = () => {
   return (
     <div className='md:max-w-[990px] max-w-[383px] mx-auto'>
       <WorkTitle />
-      <div className='mt-8 md:flex animate__animated animate__slideInUp'>
+      <Carousel />
+
+
+      {/* <div className='mt-8 md:flex animate__animated animate__slideInUp'>
         <div className='md:mr-4 md:px-4'>
           <img className='rounded-[30px] w-[200px] mx-auto h-[200px] md:w-[600px]  object-cover work-img' src={MyWeather}></img>
         </div>
@@ -28,7 +32,7 @@ export const Work = () => {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
     </div>
   )

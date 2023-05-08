@@ -27,9 +27,10 @@ html {
   overflow-x: hidden;
 }
 
-input, textarea, button {
+input, textarea, .btn-shadow {
   box-shadow: 6px 4px 1px #000;
 }
+
 
 .work-img{
   box-shadow: 23px 17px 1px rgb(0 0 0 / 0.5);
