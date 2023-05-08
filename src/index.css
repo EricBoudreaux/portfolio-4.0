@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Permanent+Marker&display=swap');
+
+body {
+    background: #746144
+}
+
+
+:root {
+    --accent-1 : #E97035;
+    --animate-delay: 0.5s;
+}
+
+@layer base {
+    h1,h2,h3,h4,h5,h6 {
+       @apply font-['Montserrat']
+    }
+
+  
+}
+
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+input, textarea, button {
+  box-shadow: 6px 4px 1px #000;
+}
+
+.work-img{
+  box-shadow: 23px 17px 1px rgb(0 0 0 / 0.5);
+}
+
+.marker {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 75px;
+    color: #fff;
+    text-shadow: -7px -7px 0 #E97035,
+    -7px 7px 0 #E97035,
+    10px 0 0 #E97035,
+    4px -4px 0 #E97035,
+    -4px 4px 0 #E97035,
+    -4px -4px 0 #E97035, 
+    4px 4px 0 #E97035;
+  }
+
+
+
+
+/* 
+REFERENCE 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dela+Gothic+One&family=Permanent+Marker&display=swap');
+
+:root {
+    --primary-1 : #F2C41B;
+    --dark : #1E1E1E;
+    --light : #D9D9D9;
+    --animate-delay: 4s;
+
+}
+
+@layer base {
+    h1,h2,h3,h4,h5,h6 {
+       @apply font-['Dela_Gothic_One']
+    }
+    button, Link {
+      @apply bg-transparent border-2 border-black py-1 px-2
+    }
+    input,
+    textarea {
+      @apply bg-white pt-3 pl-2 border-b-4 border-black
+    }
+  
+  }
+
+  body {
+    font-family: 'Azeret Mono', monospace;
+    background: var(--dark)
+  }
+
+
+  html {
+    overflow-x:hidden
+  }
+  
+      
+    .marker {
+  
+      font-family: 'Permanent Marker', cursive;
+      text-shadow: 0 3px 0px #FFF, 
+                   0 -3px 0px #FFF,
+                   -3px 0px 0px #FFF,
+                   3px 0px 0px #FFF,
+  
+                   3px 3px 0px #FFF,
+                   -3px -3px 0px #FFF
+                   ;
+    }
+    
+    .marker-sm {
+      font-family: 'Permanent Marker', cursive;
+      text-shadow: -7px -7px 0 #fff,
+      -7px 7px 0 #fff,
+  
+      4px -4px 0 #fff,
+      -4px 4px 0 #fff,
+      -4px -4px 0 #fff, 
+      4px 4px 0 #fff;
+    }
+  
+    .btn2 span:first-child{
+      transform: translateX(-101%);
+      transition: transform .3s ease-in
+    }
+    .btn2:hover span{
+      transform: translateX(0)
+    }
+  
+  
+    .textarea1 {
+      resize: none;
+    }
+*/
