@@ -7,11 +7,12 @@ import Contact from './components/Contact';
 import Work from './components/Work';
 
 
+
 function App() {
 
   const [display, setDisplay] = useState('hero');
 
-  const [navBrand, setNavBrand] = useState(true)
+  const [navBrand, setNavBrand] = useState(false)
 
   const changeDisplay = (display) => {
     setDisplay(display);

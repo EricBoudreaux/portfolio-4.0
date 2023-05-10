@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import { BiMenu } from 'react-icons/bi'
 
-import { RxDotFilled } from 'react-icons/rx'
+import { RxDotFilled, RxLinkedinLogo, RxInstagramLogo } from 'react-icons/rx'
 
 import { AiOutlineClose } from 'react-icons/ai'
 
@@ -18,13 +18,18 @@ const Navbar = ({ changeDisplay, navBrand }) => {
 
   return (
     <div className="text-white font-['Montserrat']  md:max-w-[990px] max-w-[383px]  mx-auto md:px-4 lg:px-2">
-        <div className='py-6 md:py-10 flex items-end justify-between content-end text-[24px]'>
+        <div className='py-6 md:py-10 flex items-center justify-between content-end text-[24px]'>
             {/* <h1 className='lg:hidden'>Eric Boudreaux</h1> */}
 
 
             <div className='font-light text-[20px]'>
               <h6 className={navBrand ? 'opacity-0 top-[-5px] absolute ease-in duration-500 delay-1000' : 'opacity-100 absolute top-[50px] ease-in duration-500 delay-1000'}>Based In Portland, Oregon</h6>
               <h6 className={navBrand ? 'opacity-100 top-12 absolute ease-in duration-500 delay-1000' : 'opacity-0 top-24 absolute ease-in duration-500 delay-1000'}>Eric Boudreaux</h6>
+            </div>
+
+            <div className='hidden '>
+              <RxInstagramLogo  className='hover:scale-110 duration-300 ease-in hover:text-[var(--accent-1)] hover:cursor-pointer'/>
+              <RxLinkedinLogo  className='hover:scale-110 duration-300 ease-in hover:text-[var(--accent-1)] hover:cursor-pointer'/>
             </div>
 
             <div className='block md:hidden z-50 hover:cursor-pointer' onClick={() => setNav(!nav)}>
