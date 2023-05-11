@@ -8,6 +8,7 @@ import MyWeather from '../img/myweather_website.png'
 import Chatter from '../img/chatter_website.png'
 import Photography from '../img/photography_website.png'
 import Politics from '../img/politics_website.png'
+import DragonBlade from '../img/Dragonblade_website.png'
 
 
 export default function SimpleSlider() {
@@ -120,6 +121,33 @@ export default function SimpleSlider() {
               <button className='text-black bg-white btn-shadow rounded-[5px] py-2 px-6 hover:bg-black hover:text-white mb-5 duration-300 ease-in'>PREVIEW</button>
             </a>
             <a href='https://github.com/EricBoudreaux/political-react-website' target='_blank'>
+              <button className='text-black ml-4 bg-white btn-shadow rounded-[5px] py-2 px-6 hover:bg-black hover:text-white mb-5 duration-300 ease-in'>REPO</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      {/* Slide 5 */}
+      <div>
+      <div className='mt-8 md:flex items-center px-2 justify-between'>
+
+          <img className='rounded-[30px] basis-1/4 w-[200px] mx-auto h-[200px] md:w-[300px]  object-cover work-img' src={DragonBlade}></img>
+
+        <div className='text-white mt-4 basis-2/4 md:ml-[-25px]'>
+          <h2 className='text-[22px] font-bold'>DRAGONBLADE</h2>
+          <h6 className='font-light leading-tight text-[18px]'>
+            A website to advertise and serve as a download hub for a JRPG game that I'm designing and building.
+          </h6>
+          <div className='flex flex-col md:flex-col'>
+            <h2 className='text-[20px] font-bold'>BUILT USING</h2>
+            <h2 className='text-[18px]  uppercase'>ReactJS  Firebase  Tailwind</h2>
+          </div>
+          <div className='mt-4'>
+            <a href='https://www.dragonbladegame.com/' target='_blank'>
+              <button className='text-black bg-white btn-shadow rounded-[5px] py-2 px-6 hover:bg-black hover:text-white mb-5 duration-300 ease-in'>PREVIEW</button>
+            </a>
+            <a href='https://github.com/EricBoudreaux/dragonblade-react-website' target='_blank'>
               <button className='text-black ml-4 bg-white btn-shadow rounded-[5px] py-2 px-6 hover:bg-black hover:text-white mb-5 duration-300 ease-in'>REPO</button>
             </a>
           </div>
